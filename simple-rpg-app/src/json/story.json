@@ -1,0 +1,33 @@
+{
+    "steps": [
+        {
+            "id": "1",
+            "scenarioImage": "",
+            "description": "something happned",
+            "option": [
+                {
+                    "optionId": "1",
+                    "description": "I choose A",
+                    "goToStepId": "10"
+                },
+                {
+                    "optionId": "2",
+                    "description": "I choose B",
+                    "goToStepId": "11"
+                }
+            ]
+        },
+        {
+            "id": "10",
+            "scenarioImage": "",
+            "description": "Option A chosen",
+            "option": []
+        },
+        {
+            "id": "11",
+            "scenarioImage": "",
+            "description": "Option B chosen",
+            "option": []
+        }
+    ]
+}
