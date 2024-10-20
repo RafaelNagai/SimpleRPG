@@ -1,10 +1,10 @@
-import './App.css';
 import StartPage from './pages/StartPage';
 import StoryPage from './pages/StoryPage';
+import RouteManager from './router/RouteManager';
 
 function App() {
   return (
-    <StoryPage />
+    <RouteManager />
   );
 }
 
