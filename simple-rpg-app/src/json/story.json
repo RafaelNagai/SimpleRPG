@@ -2,9 +2,10 @@
     "steps": [
         {
             "id": "1",
-            "scenarioImage": "",
+            "scenarioImage": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/4/2024/02/zombie-house-flipping-3000x3000-primary-1x1-1-scaled.jpg",
+            "title": "What are you going to do?",
             "description": "something happned",
-            "option": [
+            "options": [
                 {
                     "optionId": "1",
                     "description": "I choose A",
@@ -20,14 +21,16 @@
         {
             "id": "10",
             "scenarioImage": "",
+            "title": "What are you going to do?",
             "description": "Option A chosen",
-            "option": []
+            "options": []
         },
         {
             "id": "11",
             "scenarioImage": "",
+            "title": "What are you going to do?",
             "description": "Option B chosen",
-            "option": []
+            "options": []
         }
     ]
 }
