@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import StartPage from '../pages/StartPage'
-import StoryPage from '../pages/StoryPage'
+import StartPage from '../pages/StartPage';
+import StoryPage from '../pages/StoryPage';
 
-const GuideRoutes = {
-    "/SimpleRPG": <StartPage />,
+const BaseRoutes = {
+    "/SimpleRPG/": <StartPage />,
     "/SimpleRPG/story": <StoryPage />
 }
 
@@ -12,7 +12,7 @@ const RouteManager = () => {
         <BrowserRouter>
             <Routes>
             {
-                Object.entries(GuideRoutes).map(([key, value]) => (
+                Object.entries(BaseRoutes).map(([key, value]) => (
                     <Route key={key} path={key} element={value} />
                 ))
             }
@@ -22,4 +22,3 @@ const RouteManager = () => {
 }
 
 export default RouteManager;
-export { GuideRoutes };
