@@ -10,7 +10,10 @@ function StepComponent({ step }) {
                 <div className={styles.description}>{ step.description }</div>
                 {
                     step.options.map((opt) => (
-                        <OptionButton id={`optionButton${opt.id}`} goToID={opt.goToNextStepId} description={opt.description} />
+                        <OptionButton 
+                            id={`optionButton${opt.id}`}  
+                            description={opt.description}
+                            consequences={opt.consequences} />
                     ))
                 }
             </div>

@@ -1,15 +1,18 @@
+import Consequence from "./ConsequenceModel";
+
 class Option {
-    constructor(id, description, goToNextStepId) {
+    constructor(id, description, consequences) {
         this.id = id;
         this.description = description;
-        this.goToNextStepId = goToNextStepId;
+        this.consequences = consequences;
     }
 
     static JsonToOption(jsonData) {
+        const consequences = jsonData.consequences.map(opt => Consequence.JsonToConsequence(opt));
         return new Option(
             jsonData.optionId, 
             jsonData.description, 
-            jsonData.goToStepId
+            consequences
         );
     }
 }

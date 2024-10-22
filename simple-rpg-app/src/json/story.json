@@ -2,44 +2,265 @@
     "steps": [
         {
             "id": "1",
-            "scenarioImage": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/4/2024/02/zombie-house-flipping-3000x3000-primary-1x1-1-scaled.jpg",
-            "title": "What are you going to do?",
-            "description": "You are in a house and have to decide your next step to survive an zumbi invasion. What are you going to do?",
+            "scenarioImage": "https://images.unsplash.com/photo-1526547237232-8e04be9a6d8d?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "title": "A Strange Silence",
+            "description": "You wake up in a dark, abandoned house. The streets outside are eerily quiet. You remember the news reports about a zombie outbreak, but you didn’t think it would come to your town. Now, you hear distant groaning and footsteps approaching. Time is running out. What will you do?",
             "options": [
                 {
                     "optionId": "1",
-                    "description": "Build a barricate to avoid enemies",
-                    "goToStepId": "10"
+                    "description": "Block the doors and windows with furniture to buy some time.",
+                    "consequences": [
+                        {
+                            "consequenceId": 1,
+                            "title": "Barricade the house.",
+                            "goToStepId": "2"
+                        },
+                        {
+                            "consequenceId": 2,
+                            "title": "Failed attempt to barricade.",
+                            "goToStepId": "3"
+                        }
+                    ]
                 },
                 {
                     "optionId": "2",
-                    "description": "Try to find a weapon in the garage. However it could be dangerous and there are a highly possibility to find a zumbi.",
-                    "goToStepId": "11"
+                    "description": "Search the kitchen for food and something to defend yourself with.",
+                    "consequences": [
+                        {
+                            "consequenceId": 1,
+                            "title": "Find supplies.",
+                            "goToStepId": "4"
+                        },
+                        {
+                            "consequenceId": 2,
+                            "title": "Make noise while searching.",
+                            "goToStepId": "3"
+                        }
+                    ]
                 },
                 {
                     "optionId": "3",
-                    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-                    "goToStepId": "11"
-                },
-                {
-                    "optionId": "4",
-                    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-                    "goToStepId": "11"
+                    "description": "Sneak out of the house quietly and try to reach your car.",
+                    "consequences": [
+                        {
+                            "consequenceId": 1,
+                            "title": "Reach the car.",
+                            "goToStepId": "6"
+                        },
+                        {
+                            "consequenceId": 2,
+                            "title": "Zombies spot you.",
+                            "goToStepId": "3"
+                        }
+                    ]
                 }
             ]
         },
         {
-            "id": "10",
-            "scenarioImage": "",
-            "title": "What are you going to do?",
-            "description": "Option A chosen",
-            "options": []
+            "id": "2",
+            "scenarioImage": "https://images.unsplash.com/photo-1524154211178-4d8143cd4937?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3",
+            "title": "Safe, for Now",
+            "description": "You successfully block all the windows and doors. The groaning outside gets louder, but you feel a sense of temporary safety. However, supplies are limited, and you can’t stay here forever. You need to make a new decision.",
+            "options": [
+                {
+                    "optionId": "1",
+                    "description": "Search the house for supplies.",
+                    "consequences": [
+                        {
+                            "consequenceId": 1,
+                            "title": "Find supplies.",
+                            "goToStepId": "4"
+                        },
+                        {
+                            "consequenceId": 2,
+                            "title": "Attract zombies with noise.",
+                            "goToStepId": "3"
+                        }
+                    ]
+                },
+                {
+                    "optionId": "2",
+                    "description": "Try to sneak out of the house through the back door.",
+                    "consequences": [
+                        {
+                            "consequenceId": 1,
+                            "title": "Escape unnoticed.",
+                            "goToStepId": "6"
+                        },
+                        {
+                            "consequenceId": 2,
+                            "title": "Spotted while escaping.",
+                            "goToStepId": "3"
+                        }
+                    ]
+                }
+            ]
         },
         {
-            "id": "11",
-            "scenarioImage": "",
-            "title": "You died.",
-            "description": "Sorry, try again.",
+            "id": "3",
+            "scenarioImage": "https://images.unsplash.com/photo-1592194996308-dc8c1dc6a08e?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3",
+            "title": "Caught by the Horde",
+            "description": "The barricade fails, or your attempt to be quiet didn't work. The zombies are breaking in. You have no choice but to fight for your life.",
+            "options": [
+                {
+                    "optionId": "1",
+                    "description": "Fight the zombies with whatever you can find.",
+                    "consequences": [
+                        {
+                            "consequenceId": 1,
+                            "title": "Fend off the zombies.",
+                            "goToStepId": "5"
+                        },
+                        {
+                            "consequenceId": 2,
+                            "title": "Overwhelmed by zombies.",
+                            "goToStepId": "7"
+                        }
+                    ]
+                },
+                {
+                    "optionId": "2",
+                    "description": "Try to flee upstairs and find a way out.",
+                    "consequences": [
+                        {
+                            "consequenceId": 1,
+                            "title": "Escape through a window.",
+                            "goToStepId": "6"
+                        },
+                        {
+                            "consequenceId": 2,
+                            "title": "Zombies catch you.",
+                            "goToStepId": "7"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "scenarioImage": "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3",
+            "title": "Stocking Up",
+            "description": "You manage to find some supplies. You have food, a flashlight, and a weapon. You feel a bit more prepared, but the threat is still out there. What will you do next?",
+            "options": [
+                {
+                    "optionId": "1",
+                    "description": "Continue searching the house for more useful items.",
+                    "consequences": [
+                        {
+                            "consequenceId": 1,
+                            "title": "Find a radio.",
+                            "goToStepId": "6"
+                        },
+                        {
+                            "consequenceId": 2,
+                            "title": "Zombies break in.",
+                            "goToStepId": "3"
+                        }
+                    ]
+                },
+                {
+                    "optionId": "2",
+                    "description": "Try to leave the house and find other survivors.",
+                    "consequences": [
+                        {
+                            "consequenceId": 1,
+                            "title": "Escape unnoticed.",
+                            "goToStepId": "6"
+                        },
+                        {
+                            "consequenceId": 2,
+                            "title": "Spotted by zombies.",
+                            "goToStepId": "3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "scenarioImage": "https://images.unsplash.com/photo-1524154211178-4d8143cd4937?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3",
+            "title": "Narrow Escape",
+            "description": "You manage to fight off the zombies, but you're wounded. You need to find help or a place to rest before more zombies arrive. Time is running out.",
+            "options": [
+                {
+                    "optionId": "1",
+                    "description": "Look for first aid supplies in the house.",
+                    "consequences": [
+                        {
+                            "consequenceId": 1,
+                            "title": "Find bandages.",
+                            "goToStepId": "6"
+                        },
+                        {
+                            "consequenceId": 2,
+                            "title": "No supplies found.",
+                            "goToStepId": "3"
+                        }
+                    ]
+                },
+                {
+                    "optionId": "2",
+                    "description": "Leave the house and search for survivors.",
+                    "consequences": [
+                        {
+                            "consequenceId": 1,
+                            "title": "Find a safe haven.",
+                            "goToStepId": "6"
+                        },
+                        {
+                            "consequenceId": 2,
+                            "title": "Encounter more zombies.",
+                            "goToStepId": "3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "scenarioImage": "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3",
+            "title": "On the Run",
+            "description": "You successfully manage to escape the house and get to your car. Now, you need to decide where to go. The city is overrun with zombies, but there might be a safe zone somewhere.",
+            "options": [
+                {
+                    "optionId": "1",
+                    "description": "Drive to the nearest police station.",
+                    "consequences": [
+                        {
+                            "consequenceId": 1,
+                            "title": "Reach the police station.",
+                            "goToStepId": "7"
+                        },
+                        {
+                            "consequenceId": 2,
+                            "title": "Blocked by a zombie horde.",
+                            "goToStepId": "3"
+                        }
+                    ]
+                },
+                {
+                    "optionId": "2",
+                    "description": "Drive towards the countryside, hoping to find fewer zombies.",
+                    "consequences": [
+                        {
+                            "consequenceId": 1,
+                            "title": "Find a quiet place.",
+                            "goToStepId": "7"
+                        },
+                        {
+                            "consequenceId": 2,
+                            "title": "Attacked by zombies on the road.",
+                            "goToStepId": "3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "scenarioImage": "https://images.unsplash.com/photo-1592194996308-dc8c1dc6a08e?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3",
+            "title": "The End?",
+            "description": "You've fought bravely, but the situation is dire. Whether you reached a safe zone or succumbed to the zombie horde, this is where your journey ends... for now.",
             "options": []
         }
     ]
