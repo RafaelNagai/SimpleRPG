@@ -4,16 +4,26 @@
             "id": "1",
             "scenarioImage": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/4/2024/02/zombie-house-flipping-3000x3000-primary-1x1-1-scaled.jpg",
             "title": "What are you going to do?",
-            "description": "something happned",
+            "description": "You are in a house and have to decide your next step to survive an zumbi invasion. What are you going to do?",
             "options": [
                 {
                     "optionId": "1",
-                    "description": "I choose A",
+                    "description": "Build a barricate to avoid enemies",
                     "goToStepId": "10"
                 },
                 {
                     "optionId": "2",
-                    "description": "I choose B",
+                    "description": "Try to find a weapon in the garage. However it could be dangerous and there are a highly possibility to find a zumbi.",
+                    "goToStepId": "11"
+                },
+                {
+                    "optionId": "3",
+                    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+                    "goToStepId": "11"
+                },
+                {
+                    "optionId": "4",
+                    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
                     "goToStepId": "11"
                 }
             ]
@@ -28,8 +38,8 @@
         {
             "id": "11",
             "scenarioImage": "",
-            "title": "What are you going to do?",
-            "description": "Option B chosen",
+            "title": "You died.",
+            "description": "Sorry, try again.",
             "options": []
         }
     ]

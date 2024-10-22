@@ -1,0 +1,16 @@
+.option-button:first-of-type {
+    margin-top: 0.7em;
+}
+
+.option-button {
+    padding: 1em;
+    font-family: "Agdasima", sans-serif;
+    background-color: black;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: x-large;
+    width: 100%;
+    margin-bottom: 0.7em;
+}
+

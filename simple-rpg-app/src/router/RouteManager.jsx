@@ -4,7 +4,8 @@ import StoryPage from '../pages/StoryPage';
 
 const BaseRoutes = {
     "/SimpleRPG/": <StartPage />,
-    "/SimpleRPG/story": <StoryPage />
+    "/SimpleRPG/story": <StoryPage />,
+    "/SimpleRPG/story/:stepID": <StoryPage />
 }
 
 const RouteManager = () => {
