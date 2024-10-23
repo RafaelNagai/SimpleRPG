@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/SimpleRPG/static/css/main.a4272145.css",
+    "main.js": "/SimpleRPG/static/js/main.ae2a55f5.js",
+    "static/js/453.10cd9f77.chunk.js": "/SimpleRPG/static/js/453.10cd9f77.chunk.js",
+    "static/media/logo-qais-story.png": "/SimpleRPG/static/media/logo-qais-story.554eecdbd7326aba9b50.png",
+    "static/media/dice.png": "/SimpleRPG/static/media/dice.0cbd4b3517c7dc6b6fa6.png",
+    "index.html": "/SimpleRPG/index.html",
+    "main.a4272145.css.map": "/SimpleRPG/static/css/main.a4272145.css.map",
+    "main.ae2a55f5.js.map": "/SimpleRPG/static/js/main.ae2a55f5.js.map",
+    "453.10cd9f77.chunk.js.map": "/SimpleRPG/static/js/453.10cd9f77.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4272145.css",
+    "static/js/main.ae2a55f5.js"
+  ]
+}
