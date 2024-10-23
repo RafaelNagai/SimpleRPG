@@ -49,7 +49,7 @@
                         },
                         {
                             "consequenceId": 2,
-                            "title": "Zombies spot you.",
+                            "title": "Something spot you.",
                             "goToStepId": "3"
                         }
                     ]
@@ -58,7 +58,7 @@
         },
         {
             "id": "2",
-            "scenarioImage": "https://images.unsplash.com/photo-1524154211178-4d8143cd4937?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3",
+            "scenarioImage": "https://www.thecpswarehouse.co.za/wp-content/uploads/2015/08/3244.jpg",
             "title": "Safe, for Now",
             "description": "You successfully block all the windows and doors. The groaning outside gets louder, but you feel a sense of temporary safety. However, supplies are limited, and you can’t stay here forever. You need to make a new decision.",
             "options": [
@@ -98,7 +98,7 @@
         },
         {
             "id": "3",
-            "scenarioImage": "https://images.unsplash.com/photo-1592194996308-dc8c1dc6a08e?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3",
+            "scenarioImage": "https://as2.ftcdn.net/v2/jpg/05/51/05/33/1000_F_551053365_hF8rQEjvk2GbccmkRKBHXPTHY2rPutpE.jpg",
             "title": "Caught by the Horde",
             "description": "The barricade fails, or your attempt to be quiet didn't work. The zombies are breaking in. You have no choice but to fight for your life.",
             "options": [
@@ -138,7 +138,7 @@
         },
         {
             "id": "4",
-            "scenarioImage": "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3",
+            "scenarioImage": "https://www.gamespot.com/a/uploads/original/1581/15811374/3687402-last%20of%20us%20downtown%20workbench.jpg",
             "title": "Stocking Up",
             "description": "You manage to find some supplies. You have food, a flashlight, and a weapon. You feel a bit more prepared, but the threat is still out there. What will you do next?",
             "options": [
@@ -154,7 +154,7 @@
                         {
                             "consequenceId": 2,
                             "title": "Zombies break in.",
-                            "goToStepId": "3"
+                            "goToStepId": "8"
                         }
                     ]
                 },
@@ -170,7 +170,23 @@
                         {
                             "consequenceId": 2,
                             "title": "Spotted by zombies.",
-                            "goToStepId": "3"
+                            "goToStepId": "8"
+                        }
+                    ]
+                },
+                {
+                    "optionId": "3",
+                    "description": "Try to sneak out of the house through the back door.",
+                    "consequences": [
+                        {
+                            "consequenceId": 1,
+                            "title": "Escape unnoticed.",
+                            "goToStepId": "6"
+                        },
+                        {
+                            "consequenceId": 2,
+                            "title": "Spotted while escaping.",
+                            "goToStepId": "8"
                         }
                     ]
                 }
@@ -178,7 +194,7 @@
         },
         {
             "id": "5",
-            "scenarioImage": "https://images.unsplash.com/photo-1524154211178-4d8143cd4937?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3",
+            "scenarioImage": "https://media.istockphoto.com/id/586921532/vector/man-running-away-from-zombies-in-the-night-city.jpg?s=612x612&w=0&k=20&c=HP_-URVpbaPdSoeePKwFGyr37djFoEF4FF_31hCWpRU=",
             "title": "Narrow Escape",
             "description": "You manage to fight off the zombies, but you're wounded. You need to find help or a place to rest before more zombies arrive. Time is running out.",
             "options": [
@@ -213,12 +229,28 @@
                             "goToStepId": "3"
                         }
                     ]
+                },
+                {
+                    "optionId": "3",
+                    "description": "Wait for reinforcements to eliminate the zombies outside.",
+                    "consequences": [
+                        {
+                            "consequenceId": 1,
+                            "title": "Nothing happened.",
+                            "goToStepId": "5"
+                        },
+                        {
+                            "consequenceId": 2,
+                            "title": "Zombies break in.",
+                            "goToStepId": "3"
+                        }
+                    ]
                 }
             ]
         },
         {
             "id": "6",
-            "scenarioImage": "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3",
+            "scenarioImage": "https://www.shutterstock.com/shutterstock/videos/1018247623/thumb/2.jpg",
             "title": "On the Run",
             "description": "You successfully manage to escape the house and get to your car. Now, you need to decide where to go. The city is overrun with zombies, but there might be a safe zone somewhere.",
             "options": [
@@ -258,10 +290,55 @@
         },
         {
             "id": "7",
-            "scenarioImage": "https://images.unsplash.com/photo-1592194996308-dc8c1dc6a08e?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3",
+            "scenarioImage": "https://i.ytimg.com/vi/xEyoXulFgaw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBfVbTu0WusLicyc4nu1agcbngPYg",
             "title": "The End?",
             "description": "You've fought bravely, but the situation is dire. Whether you reached a safe zone or succumbed to the zombie horde, this is where your journey ends... for now.",
             "options": []
+        },
+        {
+            "id": "8",
+            "scenarioImage": "https://as2.ftcdn.net/v2/jpg/05/51/05/33/1000_F_551053365_hF8rQEjvk2GbccmkRKBHXPTHY2rPutpE.jpg",
+            "title": "Caught by the Horde",
+            "description": "The barricade fails, or your attempt to be quiet didn't work. The zombies are breaking in. You have no choice but to fight for your life.",
+            "options": [
+                {
+                    "optionId": "1",
+                    "description": "Fight the zombies with whatever you can find.",
+                    "consequences": [
+                        {
+                            "consequenceId": 1,
+                            "title": "Use your weapon to kill them. However you lost your weapons. (No need to roll dice)",
+                            "goToStepId": "5"
+                        },
+                        {
+                            "consequenceId": 1,
+                            "title": "Fend off the zombies.",
+                            "goToStepId": "5"
+                        },
+                        {
+                            "consequenceId": 2,
+                            "title": "Overwhelmed by zombies.",
+                            "goToStepId": "7"
+                        }
+                    ]
+                },
+                {
+                    "optionId": "2",
+                    "description": "Try to flee upstairs and find a way out.",
+                    "consequences": [
+                        {
+                            "consequenceId": 1,
+                            "title": "Escape through a window.",
+                            "goToStepId": "6"
+                        },
+                        {
+                            "consequenceId": 2,
+                            "title": "Zombies catch you.",
+                            "goToStepId": "7"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

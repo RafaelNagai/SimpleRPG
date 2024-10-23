@@ -11,7 +11,7 @@ function StartPage() {
             <div className={styles.container}>
                 <img className={styles["dice-icon"]} src={diceIcon} />
                 <div className={styles.welcome}>Welcome to the Qaisssssss's Story</div>
-                <div className={styles.description}>Do you think that you have all needed to survive?!</div>
+                <div className={styles.description}>Do you think that you have everything you need to survive?!</div>
             </div>
             <button className={styles["start-button"]} onClick={() => navigateTo('/story')}>Let's Go!</button>
         </div>
