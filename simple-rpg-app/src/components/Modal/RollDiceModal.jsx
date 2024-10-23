@@ -1,4 +1,5 @@
 import { useNavigationManager } from "../../router/NavigationManager";
+import RotateDice from "../RotateDice/RotateDice";
 import styles from './RollDiceModal.module.css';
 
 const RollDiceModal = ({isOpened, onClose, consequences}) => {
@@ -12,6 +13,7 @@ const RollDiceModal = ({isOpened, onClose, consequences}) => {
             <div className={styles["modal-content"]}>
                 <div className={styles.declaration}>
                     <div className={styles.title}>Roll the dice!</div>
+                    <RotateDice />
                     <div className={styles.description}>The teacher will decide what value you need to roll on the dice.</div>
                 </div>
                 { consequences.map((consequence) => (

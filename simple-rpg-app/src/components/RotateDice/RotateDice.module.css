@@ -1,0 +1,29 @@
+.dice {
+    width: 2em;
+    height: 2em;
+    font-size: 50px;
+    position: relative;
+    animation: rotate-bounce 2s ease-in-out infinite;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Keyframes for smooth back-and-forth rotation with an elastic feel */
+@keyframes rotate-bounce {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(15deg); /* Slight rotation to the right */
+    }
+    50% {
+        transform: rotate(-15deg); /* Slight rotation to the left */
+    }
+    75% {
+        transform: rotate(10deg); /* Slight rotation back to the right */
+    }
+    100% {
+        transform: rotate(0deg); /* Return to original position */
+    }
+}

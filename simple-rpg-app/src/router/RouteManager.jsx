@@ -3,9 +3,9 @@ import StartPage from '../pages/StartPage';
 import StoryPage from '../pages/StoryPage';
 
 const BaseRoutes = {
-    "/SimpleRPG/": <StartPage />,
-    "/SimpleRPG/story": <StoryPage />,
-    "/SimpleRPG/story/:stepID": <StoryPage />
+    "/QaisStory/": <StartPage />,
+    "/QaisStory/story": <StoryPage />,
+    "/QaisStory/story/:stepID": <StoryPage />
 }
 
 const RouteManager = () => {

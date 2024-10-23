@@ -1,0 +1,59 @@
+.center {
+    translate: -50% -50%;
+    top: 45%;
+    left: 50%;
+    position: fixed;
+    width: 30%;
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    padding: 1.3em 1.3em 40px 1.3em;
+    border: black 2px solid;
+    border-radius: 8px;
+    box-shadow: 2px 3px 12px #8a8176;
+}
+
+.img{
+    object-fit: cover;
+    background-position: center;
+    width: 70%;
+    margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+    .center {
+        width: 80%;
+    }
+}
+
+.welcome {
+    font-size: x-large;
+    font-weight: 900;
+    color: brown;
+}
+
+.start-button {
+    padding: 0.3em;
+    font-family: "Agdasima", sans-serif;
+    background-color: black;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: x-large;
+    width: 80%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    justify-self: center;
+    margin-top: -20px;
+    font-weight: 900;
+}
+
+.dice-icon {
+    width: 50px;
+    position: absolute;
+    right: -20px;
+    margin-top: -45px;
+}

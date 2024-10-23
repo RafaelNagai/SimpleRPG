@@ -4,7 +4,7 @@ import styles from './StepComponent.module.css';
 function StepComponent({ step }) {
     return (
         <>
-            <img src={step.scenarioImage} />
+            <img className={styles.img} src={step.scenarioImage} />
             <div className={styles['step-container']} >
                 <div className={styles.title}>{ step.title }</div>
                 <div className={styles.description}>{ step.description }</div>
