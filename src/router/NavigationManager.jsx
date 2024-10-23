@@ -4,7 +4,7 @@ function useNavigationManager() {
     const navigate = useNavigate();
 
     const navigateTo = (path) => {
-        navigate(`/QaisStory${path}`);
+        navigate(path);
     };
     return { navigateTo };
 }
